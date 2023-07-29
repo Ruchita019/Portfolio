@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!-- <img src= "E:/Portfolioimages/logo2.png" class="logo"> -->
+            <img src= "./Portfolioimages/logo2.png" class="logo">
+            
+            <ul id="sidemenu">
+                <li><a href = '#header'>Home</a></li>
+                <li><a href = '#about'>About Me</a></li>
+                <li><a href = '#portfolio'>Projects</a></li>
+                <li><a href = '#contact'>Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="row">
+            <div class="column1">
+                <div class="header-text">
+                    <h1>Hello,<span></span></h1>
+                    <h1>My Name is<span></span></h1>
+                    <h1>Ruchita.<span></span></h1>
+                </div>
+            </div>
+            <div class="column2">
+                <img src="./Portfolioimages/img1.jpg" id="personalImage">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------------about---------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <!-- <img src="E:/Portfolioimages/pic1.jpg" > -->
+                <img src="./Portfolioimages/pic1.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class = "sub-title">About Me</h1><br>
+                <p class = "intro">I'm Ruchita, a resident of Faridabad, Haryana, and currently in my third year of B.tech, pursuing Electrical Engineering at NIT     Kurukshetra. But what truly excites me is the world of Data Science and Machine Learning. I firmly believe that beneath those ordinary datasets lie incredible, undiscovered insights just waiting to be found. My love for mathematics adds an extra thrill to this journey of exploration. Apart from my studies, I enjoy reading non-fiction books, singing, and dancing. They bring me joy, relaxation and keep me balanced. </p><br>
+                <div class="tab-titles">
+                    <p class = "tab-links active-link" onclick="opentab('describe')">Keywords that define me</p>
+                    <p class = "tab-links" onclick="opentab('skills')">Skills</p>
+                    <p class = "tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="describe">
+                    <ul>
+                        <li>Hardworking</li>
+                        <li>Passionate</li>
+                        <li>Curious </li>
+                        <li>Optimistic</li>
+                        <li>Practical</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>LANGUAGE</span><br>Python, HTML, CSS</li><br>
+                        <li><span>PROGRAMMING</span><br>Pandas, Numpy, Matplotlib, Seaborn</li><br>
+                        <li><span>DATA VISUALIZATION</span><br>Tableau, Power BI, Excel</li><br>
+                        <li><span>DATABASE</span><br>MySOL</li><br>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>B.tech, Electrical Engineering</span><br>NIT Kurukshetra (2021-Present)</li><br>
+                        <li><span>CLASS XII</span><br>Modern Vidya Niketan (2021)<br>Aggregate - 92.6%</li><br>
+                        <li><span>CLASS X</span><br>D.A.V. Public School (2019)<br>Aggregate - 90.4%</li><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+
+<!-------------------portfolio----------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <!-- <img src="E:/Portfolioimages/work1.jpg"> -->
+                <img src="./Portfolioimages/work1.jpg">
+                <div class="layer">
+                    <h3>Covid-19 Analysis India</h3>
+                    <p>Created a Tableau dashboard analysing the trend and aspect of the pandemic on health.</p>
+                    <a href="https://public.tableau.com/app/profile/ruchita8620/viz/Covid-19AnalysisINDIA3rdProject/Dashboard1"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <!-- <img src="E:/Portfolioimages/work2.jpg"> -->
+                <img src="./Portfolioimages/work2.jpg">
+                <div class="layer">
+                    <h3>Sales Analysis</h3>
+                    <p>Analyzed the sales pattern of an Electronics company using Pandas and Matplotlib.</p>
+                    <a href="https://github.com/Ruchita019/Sales_Analysis"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <!-- <img src="E:/Portfolioimages/work4.jpg"> -->
+                <img src="./Portfolioimages/work4.jpg">
+                <div class="layer">
+                    <h3>Weather Application</h3>
+                    <p>Created a API application using Python and its libraries.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="./Portfolio2.html" class="btn">See More</a>
+    </div>
+</div>
+
+<!----------------------------Contact---------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> ruchitambox19@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 8595861492</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ruchita-ruchita-845123228/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Ruchita019"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="E:/Portfolioimages/Ruchita's Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Thank You!</p>
+    </div>
+</div>
+
+
+<!----------------------------------javascript---------------------------->
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwGkPcTdgElXK57A4dICgzD4NoL_GiWfaaebU1_cPByL6iI1RNUtOEpcmAfgL7meZ5m/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = "" 
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
