@@ -133,7 +133,7 @@ h1:nth-child(3) span{
     height: 410px;
     border-radius: 50%;
     margin-top: 200px;
-    filter: drop-shadow(0px 0px 25px #ff004f);
+    filter: drop-shadow(0px 0px 12px #ff004f);
     /* border: 5px solid white; */
 }
 
